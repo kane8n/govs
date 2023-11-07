@@ -16,3 +16,5 @@ Add the following to your .bashrc or .zshrc config
 alias govs="source _govs"
 export PATH=$PATH:~/.govs/bin
 ```
+## Install other versions
+![govs_install](https://github.com/kane8n/govs/assets/4223926/795a4524-f433-475c-aab8-cc5702dd338f)
