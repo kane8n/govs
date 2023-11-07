@@ -18,3 +18,5 @@ export PATH=$PATH:~/.govs/bin
 ```
 ## Install other versions
 ![govs_install](https://github.com/kane8n/govs/assets/4223926/795a4524-f433-475c-aab8-cc5702dd338f)
+It wraps the command to install multiple versions of golang described in the official GO documentation [Managing Go installations](https://go.dev/doc/manage-install).  
+The list of installable versions is obtained by scraping GO's [All releases page](https://go.dev/dl/) to get all versions that match the OS/ARC you are running.
