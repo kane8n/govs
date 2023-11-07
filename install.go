@@ -63,13 +63,19 @@ func install(ctx *cli.Context) error {
 	}
 
 	// install実行
-	cmd := exec.Command("go", "install", fmt.Sprintf("golang.org/dl/go%s@latest", result))
+	installver := fmt.Sprintf("golang.org/dl/go%s@latest", result)
+	cmd := exec.Command("go", "install", installver)
+	fmt.Println(fmt.Sprintf("go install %s", installver))
 	output, err := cmd.CombinedOutput()
 	if err != nil {
 		return err
 	}
-	fmt.Println(string(output))
-	cmd = exec.Command(fmt.Sprintf("go%s", result), "download")
+	if len(output) > 0 {
+		fmt.Print(string(output))
+	}
+	gocmd := fmt.Sprintf("go%s", result)
+	cmd = exec.Command(gocmd, "download")
+	fmt.Println(fmt.Sprintf("%s download", gocmd))
 	output, err = cmd.CombinedOutput()
 	if err != nil {
 		return err
