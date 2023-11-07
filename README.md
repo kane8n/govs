@@ -1,7 +1,7 @@
 # govs
-Golang Version Switcher
-Easily switch between golang version.
-Inspired by [awsp](https://github.com/johnnyopao/awsp).
+Golang Version Switcher  
+Easily switch between golang version.  
+Inspired by [awsp](https://github.com/johnnyopao/awsp).  
 
 ![govs](https://github.com/kane8n/govs/assets/4223926/d8412642-7cad-453e-a37b-e9c3c8aced78)
 
