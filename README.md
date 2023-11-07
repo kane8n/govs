@@ -14,4 +14,5 @@ make install
 Add the following to your .bashrc or .zshrc config
 ```
 alias govs="source _govs"
+export PATH=$PATH:~/.govs/bin
 ```
